@@ -4,6 +4,7 @@ import { appConfig } from './config/app.config.js';
 import { HealthModule } from './health/health.module.js';
 import { IntakeModule } from './intake/intake.module.js';
 import { OcrModule } from './ocr/ocr.module.js';
+import { ReconstructionModule } from './reconstruction/reconstruction.module.js';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { OcrModule } from './ocr/ocr.module.js';
     }),
     IntakeModule,
     OcrModule,
+    ReconstructionModule,
     HealthModule,
   ],
 })
