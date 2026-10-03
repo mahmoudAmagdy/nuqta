@@ -1,0 +1,30 @@
+{
+  "name": "nuqta",
+  "version": "0.1.0",
+  "description": "Arabic OCR extraction: a shared reconstruction core with per-document-type adapters",
+  "private": true,
+  "license": "MIT",
+  "author": "Mahmoud Magdy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahmoudAmagdy/nuqta.git"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "test:e2e": "npm run test:e2e --workspaces --if-present",
+    "format": "npm run format --workspaces --if-present",
+    "format:check": "npm run format:check --workspaces --if-present",
+    "start:api": "npm run start:dev --workspace @nuqta/api",
+    "ocr": "npm run ocr --workspace @nuqta/api --",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test:live": "npm run test:live --workspaces --if-present"
+  }
+}

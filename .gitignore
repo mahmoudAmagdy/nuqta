@@ -1,0 +1,22 @@
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Secrets stay local. .env.example documents the variables.
+.env
+.env.*
+!.env.example
+
+# Tesseract trained data, fetched on first use
+.cache/
+*.traineddata
+
+# OCR dumps written by `npm run ocr -- --out`
+*.ocr.json
+
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/

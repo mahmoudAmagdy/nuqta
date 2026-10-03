@@ -1,0 +1,31 @@
+{
+  "status": "succeeded",
+  "createdDateTime": "2026-10-03T12:00:00Z",
+  "lastUpdatedDateTime": "2026-10-03T12:00:01Z",
+  "analyzeResult": {
+    "apiVersion": "2024-11-30",
+    "modelId": "prebuilt-read",
+    "stringIndexType": "textElements",
+    "content": "فاتورة رقم INV-2041\nالإجمالي ١٢٥٠",
+    "pages": [
+      {
+        "pageNumber": 1,
+        "angle": 0.4,
+        "width": 800,
+        "height": 200,
+        "unit": "pixel",
+        "words": [
+          { "content": "فاتورة", "polygon": [640, 30, 760, 30, 760, 70, 640, 70], "confidence": 0.995, "span": { "offset": 0, "length": 6 } },
+          { "content": "رقم", "polygon": [560, 30, 620, 30, 620, 70, 560, 70], "confidence": 0.99, "span": { "offset": 7, "length": 3 } },
+          { "content": "INV-2041", "polygon": [380, 32, 540, 32, 540, 68, 380, 68], "confidence": 0.93, "span": { "offset": 11, "length": 8 } },
+          { "content": "الإجمالي", "polygon": [600, 100, 760, 100, 760, 140, 600, 140], "confidence": 0.98, "span": { "offset": 20, "length": 8 } },
+          { "content": "١٢٥٠", "polygon": [500, 102, 580, 102, 580, 138, 500, 138], "confidence": 0.71, "span": { "offset": 29, "length": 4 } }
+        ],
+        "lines": [
+          { "content": "فاتورة رقم INV-2041", "polygon": [380, 30, 760, 30, 760, 70, 380, 70], "spans": [{ "offset": 0, "length": 19 }] },
+          { "content": "الإجمالي ١٢٥٠", "polygon": [500, 100, 760, 100, 760, 140, 500, 140], "spans": [{ "offset": 20, "length": 13 }] }
+        ]
+      }
+    ]
+  }
+}
